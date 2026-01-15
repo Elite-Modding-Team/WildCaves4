@@ -1,16 +1,22 @@
-#Ignore EVERYTHING
-/*
-/*/
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
 
-#Except
-!.gitignore
-!build.gradle
-!gradle*
-!LICENSE.md
-!README.md
-!mcmod.info
-!/assets/
-!/wildCaves/
-!WildCaves3.png
-!update.xml
-!changelog.md
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
