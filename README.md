@@ -1,10 +1,10 @@
 ==========
-WildCaves3
+WildCaves4
 ==========
 
-This is the repository for the "Wild Caves 3" mod.
+This is the repository for the "Wild Caves 4" mod.
 
-Mod page: http://www.minecraftforum.net/topic/1554854-162forge-wildcaves-3-v0433/
+~~Mod page: http://www.minecraftforum.net/topic/1554854-162forge-wildcaves-3-v0433/~~
 
 
 ============
@@ -22,4 +22,4 @@ Reporting issues
 - Before reporting an issue, please check that it has not been reported before.
 - Issues are for bugs/crashes, please do not use them to ask general questions.
 - Always include the version you are having trouble with. Or if you're building from source, which source you're building.
-- If the issues occurs on a server, be sure it's a vanilla forge server.
+- If the issues occur on a server, be sure it's a vanilla forge server.

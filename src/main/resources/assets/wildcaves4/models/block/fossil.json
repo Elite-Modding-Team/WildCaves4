@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wildcaves4:blocks/fossils0"
+  }
+}

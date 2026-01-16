@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wildcaves4:blocks/sandstone_9"
+  }
+}

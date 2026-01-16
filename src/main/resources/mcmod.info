@@ -1,7 +1,7 @@
 [
   {
-    "modid": "wildcaves3",
-    "name": "Wild Caves 3",
+    "modid": "wildcaves4",
+    "name": "Wild Caves 4",
     "description": "This mod gives some much needed love to vanilla caves, adds stalactites, stalagmites, vines, glowing mushrooms, icicles and there's more to come.",
     "mcversion": "${mcversion}",
     "version": "${version}",
@@ -11,6 +11,6 @@
       "GotoLink",
       "ACGaming"
     ],
-    "logoFile": "wildcaves3.png"
+    "logoFile": "wildcaves4.png"
   }
 ]
