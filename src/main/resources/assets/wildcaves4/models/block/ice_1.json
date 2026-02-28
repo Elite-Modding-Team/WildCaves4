@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "wildcaves4:blocks/decorations1"
+    "cross": "wildcaves4:blocks/ice_1"
   }
 }
