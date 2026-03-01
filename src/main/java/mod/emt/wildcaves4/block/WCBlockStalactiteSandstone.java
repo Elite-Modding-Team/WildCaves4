@@ -70,11 +70,6 @@ public class WCBlockStalactiteSandstone extends Block {
         return droppedItem;
     }
 
-    @Override
-    public int quantityDropped(Random rand) {
-        return rand.nextInt(3) - 1;
-    }
-
     public boolean canBlockStay(World world, BlockPos pos, IBlockState state) {
         boolean result = false;
         int metadata = getMetaFromState(state);
@@ -104,11 +99,6 @@ public class WCBlockStalactiteSandstone extends Block {
         while (world.getBlockState(pos.up(i)).getBlock() == WCBlocks.stalactite_stone || world.getBlockState(pos.up(i)).getBlock() == WCBlocks.stalactite_sandstone)
             i = i + increment;
         return world.getBlockState(pos.up(i)).isNormalCube();
-    }
-
-    @Override
-    public int damageDropped(IBlockState state) {
-        return getMetaFromState(state);
     }
 
     @Override
