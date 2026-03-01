@@ -16,7 +16,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class WCColorHandler {
     public static void registerRenders() {
-        Minecraft.getMinecraft().getBlockColors().registerBlockColorHandler(new IBlockColor() {
+        // TODO: Maybe use this for something else?
+        /*Minecraft.getMinecraft().getBlockColors().registerBlockColorHandler(new IBlockColor() {
             @Override
             public int colorMultiplier(IBlockState iBlockState, IBlockAccess iBlockAccess, BlockPos blockPos, int i) {
                 if (WCBlocks.cap.getMetaFromState(iBlockState) < 6)
@@ -30,6 +31,6 @@ public class WCColorHandler {
                 if (itemStack.getMetadata() < 6) return ColorizerFoliage.getFoliageColorBasic();
                 return -1;
             }
-        }, WCBlocks.cap);
+        }, WCBlocks.cap);*/
     }
 }
