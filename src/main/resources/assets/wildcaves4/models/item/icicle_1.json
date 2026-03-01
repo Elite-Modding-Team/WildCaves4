@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "wildcaves4:blocks/decorations1"
+    "layer0": "wildcaves4:blocks/ice_1"
   }
 }
