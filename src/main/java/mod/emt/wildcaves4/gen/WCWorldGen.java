@@ -97,7 +97,7 @@ public class WCWorldGen {
         category = "Biome-specific";
         probabilityVinesJungle = (float) config.get(category, "Probability of vines in jungle caves", 0.5).getDouble(0.5);
         probabilityIcicle = (float) config.get(category, "Probability of icicles in frozen caves", 0.6).getDouble(0.6);
-        block = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(config.get(category, "Block to generate in frozen caves", "ice").getString().trim()));
+        block = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(config.get(category, "Block to generate in frozen caves", "packed_ice").getString().trim()));
         if (block != null) {
             WCUtils.frozen = block;
         }
