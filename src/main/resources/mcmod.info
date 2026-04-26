@@ -5,11 +5,12 @@
     "description": "This mod gives some much needed love to vanilla caves, adds stalactites, stalagmites, vines, glowing mushrooms, icicles and there's more to come.",
     "mcversion": "${mcversion}",
     "version": "${version}",
-    "url": "http://www.minecraftforum.net/topic/1554854-146forge-wildcaves-3-v032/",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/wild-caves-4",
     "authorList": [
       "Alexmania",
       "GotoLink",
-      "ACGaming"
+      "ACGaming",
+      "IcarussOne"
     ],
     "logoFile": "wildcaves4.png"
   }
