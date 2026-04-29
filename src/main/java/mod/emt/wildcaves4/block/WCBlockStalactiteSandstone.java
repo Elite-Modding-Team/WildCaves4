@@ -1,6 +1,7 @@
 package mod.emt.wildcaves4.block;
 
 import mod.emt.wildcaves4.WildCaves;
+import mod.emt.wildcaves4.config.WCConfig;
 import mod.emt.wildcaves4.init.WCBlocks;
 import mod.emt.wildcaves4.util.WCUtils;
 import net.minecraft.block.Block;
@@ -139,15 +140,16 @@ public class WCBlockStalactiteSandstone extends Block {
 
     @Override
     public void onFallenUpon(World world, BlockPos pos, Entity entity, float par6) {
-        if (WildCaves.damageWhenFallenOn && entity.isEntityAlive()) {
+        if (WCConfig.GENERAL.stalactiteDamage && entity.isEntityAlive()) {
             entity.attackEntityFrom(DamageSource.GENERIC, 5);
         }
     }
 
     @Override
     public void onLanded(World world, Entity entity) {
-        if (WildCaves.solidStalactites)
+        if (WCConfig.GENERAL.solidStalactites) {
             super.onLanded(world, entity);
+        }
     }
 
     @Override
@@ -189,13 +191,14 @@ public class WCBlockStalactiteSandstone extends Block {
 
     @Override
     public boolean isPassable(IBlockAccess access, BlockPos pos) {
-        return !WildCaves.solidStalactites || super.isPassable(access, pos);
+        return !WCConfig.GENERAL.solidStalactites || super.isPassable(access, pos);
     }
 
     @Override
     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean isActualState) {
-        if (WildCaves.solidStalactites)
+        if (WCConfig.GENERAL.solidStalactites) {
             super.addCollisionBoxToList(state, worldIn, pos, entityBox, collidingBoxes, entityIn, isActualState);
+        }
     }
 
     @Override

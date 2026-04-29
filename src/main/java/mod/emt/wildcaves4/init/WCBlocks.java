@@ -3,6 +3,7 @@ package mod.emt.wildcaves4.init;
 import mod.emt.wildcaves4.Tags;
 import mod.emt.wildcaves4.WildCaves;
 import mod.emt.wildcaves4.block.*;
+import mod.emt.wildcaves4.config.WCConfig;
 import mod.emt.wildcaves4.item.WCItemStalactite;
 import mod.emt.wildcaves4.item.WCMultiItemBlock;
 import net.minecraft.block.Block;
@@ -35,7 +36,7 @@ public class WCBlocks {
         stalactite_stone = new WCBlockStalactiteStone().setRegistryName("stalactite_stone").setTranslationKey(Tags.MOD_ID + ".stalactite_stone").setCreativeTab(WildCaves.tabWildCaves);
         stalactite_sandstone = new WCBlockStalactiteSandstone(Item.getItemFromBlock(Blocks.SANDSTONE)).setRegistryName("stalactite_sandstone").setTranslationKey(Tags.MOD_ID + ".stalactite_sandstone").setCreativeTab(WildCaves.tabWildCaves);
         icicle = new WCBlockIcicle().setRegistryName("icicle").setTranslationKey(Tags.MOD_ID + ".icicle").setCreativeTab(WildCaves.tabWildCaves);
-        cap = new WCBlockCap().setLightLevel(WildCaves.floraLightLevel).setRegistryName("cap").setTranslationKey(Tags.MOD_ID + ".cap").setCreativeTab(WildCaves.tabWildCaves);
+        cap = new WCBlockCap().setLightLevel(WCConfig.GENERAL.floraLightLevel).setRegistryName("cap").setTranslationKey(Tags.MOD_ID + ".cap").setCreativeTab(WildCaves.tabWildCaves);
         fossil = new WCBlockFossil().setRegistryName("fossil").setTranslationKey(Tags.MOD_ID + ".fossil").setCreativeTab(WildCaves.tabWildCaves);
 
         event.getRegistry().registerAll(stalactite_stone, stalactite_sandstone, icicle, cap, fossil);
