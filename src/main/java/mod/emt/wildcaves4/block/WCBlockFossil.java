@@ -13,7 +13,8 @@ import java.util.Random;
 public class WCBlockFossil extends Block {
     public WCBlockFossil() {
         super(Material.ROCK);
-        this.setHardness(1F);
+        this.setHardness(3.0F);
+        this.setResistance(5.0F);
     }
 
     @Override
@@ -35,5 +36,4 @@ public class WCBlockFossil extends Block {
         }
         return result;
     }
-
 }

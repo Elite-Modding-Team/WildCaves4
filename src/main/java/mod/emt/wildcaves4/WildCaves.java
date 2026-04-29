@@ -16,6 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+// TODO: All this should be in a config class
 @Mod(modid = Tags.MOD_ID, name = Tags.NAME, version = Tags.VERSION)
 public class WildCaves {
 
