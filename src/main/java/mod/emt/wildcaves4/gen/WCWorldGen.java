@@ -1,5 +1,6 @@
 package mod.emt.wildcaves4.gen;
 
+import mod.emt.wildcaves4.config.WCConfig;
 import mod.emt.wildcaves4.gen.biome.*;
 import mod.emt.wildcaves4.util.WCUtils;
 import net.minecraft.block.Block;
@@ -53,9 +54,6 @@ public class WCWorldGen {
     private static void setConfig(Configuration config) {
         // --generation permissions------
         String category = "Permissions";
-        boolean sandstoneStalactites = config.get(category, "Generate sandstone stalactites in arid biomes", true).getBoolean(true);
-        boolean flora = config.get(category, "Generate flora in caves", true).getBoolean(true);
-        boolean stalactites = config.get(category, "Generate stalactites in caves", true).getBoolean(true);
         String[] list = config.get(category, "Dimension Blacklist", "-1,1", "Worlds where generation won't occur (by dimension IDs), use [id1;id2] to add a range of IDs").getString().split(",");
         for (String text : list) {
             if (text != null && !text.isEmpty()) {
@@ -114,10 +112,10 @@ public class WCWorldGen {
         probabilitySpiderWeb = (float) config.get(category, "Probability of spider webs", 0.15).getDouble(0.15);
         maxGenHeightGlowcapNormal = config.get(category, "Max height at which to generate glowcaps in normal biomes", 30).getInt();
         probabilitySkulls = (float) config.get(category, "Probability of skulls", 0.0001).getDouble(0.0001);
-        if (!sandstoneStalactites) {
+        if (!WCConfig.WORLD_GEN.generateSandstoneStalactites) {
             probabilitySandStalactites = 0;
         }
-        if (!flora) {
+        if (!WCConfig.WORLD_GEN.generateFlora) {
             probabilityGlowcaps = 0;
             probabilityVinesJungle = 0;
             probabilityGlowcapsHumid = 0;
@@ -125,7 +123,7 @@ public class WCWorldGen {
             probabilityVines = 0;
             probabilityGlowcaps = 0;
         }
-        if (!stalactites) {
+        if (!WCConfig.WORLD_GEN.generateStoneStalactites) {
             probabilityStalactite = 0;
             probabilitySandStalactites = 0;
         }

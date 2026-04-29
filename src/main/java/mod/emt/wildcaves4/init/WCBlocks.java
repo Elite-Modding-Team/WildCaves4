@@ -36,7 +36,7 @@ public class WCBlocks {
         stalactite_stone = new WCBlockStalactiteStone().setRegistryName("stalactite_stone").setTranslationKey(Tags.MOD_ID + ".stalactite_stone").setCreativeTab(WildCaves.tabWildCaves);
         stalactite_sandstone = new WCBlockStalactiteSandstone(Item.getItemFromBlock(Blocks.SANDSTONE)).setRegistryName("stalactite_sandstone").setTranslationKey(Tags.MOD_ID + ".stalactite_sandstone").setCreativeTab(WildCaves.tabWildCaves);
         icicle = new WCBlockIcicle().setRegistryName("icicle").setTranslationKey(Tags.MOD_ID + ".icicle").setCreativeTab(WildCaves.tabWildCaves);
-        cap = new WCBlockCap().setLightLevel(WCConfig.GENERAL.floraLightLevel).setRegistryName("cap").setTranslationKey(Tags.MOD_ID + ".cap").setCreativeTab(WildCaves.tabWildCaves);
+        cap = new WCBlockCap().setLightLevel(WCConfig.GENERAL.mushroomLightLevel).setRegistryName("cap").setTranslationKey(Tags.MOD_ID + ".cap").setCreativeTab(WildCaves.tabWildCaves);
         fossil = new WCBlockFossil().setRegistryName("fossil").setTranslationKey(Tags.MOD_ID + ".fossil").setCreativeTab(WildCaves.tabWildCaves);
 
         event.getRegistry().registerAll(stalactite_stone, stalactite_sandstone, icicle, cap, fossil);

@@ -14,11 +14,11 @@ public class WCConfig {
     public static final WorldGen WORLD_GEN = new WorldGen();
 
     public static class General {
-        @Config.Name("Flora Light Level")
+        @Config.Name("Glowing Mushroom Light Level")
         @Config.Comment("The amount of light emitted by glowing mushrooms")
         @Config.RangeInt(min = 0, max = 15)
         @Config.RequiresMcRestart
-        public int floraLightLevel = 5;
+        public int mushroomLightLevel = 5;
 
         @Config.Name("Solid Stalactites/Stalagmites")
         @Config.Comment("Whether stalactites/stalagmites can be collided with")
@@ -36,6 +36,21 @@ public class WCConfig {
         @Config.Comment("The Chance for Bone Pile blocks to generate")
         @Config.RequiresMcRestart
         public int fossilChance = 5;
+
+        @Config.Name("Generate Flora")
+        @Config.Comment("Generates flora in caves")
+        @Config.RequiresMcRestart
+        public boolean generateFlora = true;
+
+        @Config.Name("Generate Sandstone Stalactites/Stalagmites")
+        @Config.Comment("Generates sandstone stalactites/stalagmites in arid caves")
+        @Config.RequiresMcRestart
+        public boolean generateSandstoneStalactites = true;
+
+        @Config.Name("Generate Stone Stalactites/Stalagmites")
+        @Config.Comment("Generates stone stalactites/stalagmites in caves")
+        @Config.RequiresMcRestart
+        public boolean generateStoneStalactites = true;
 
         @Config.Name("Skull Chest Chance")
         @Config.Comment("The chance for a skull to be found in dungeon chests")
