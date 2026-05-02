@@ -40,6 +40,7 @@ public class WCUtils {
                     // basically transform or not
                     if (weightedChoice(0.8f, 0.2f, 0, 0, 0, 0) == 1) {
                         BlockPos newPos = new BlockPos(newX + j, newY - i, newZ + k);
+                        if (newPos.getY() >= world.getSeaLevel()) continue;
                         aux = world.getBlockState(newPos).getBlock();
                         if (freezable.contains(aux))// stone -> ice
                             world.setBlockState(newPos, frozen.getDefaultState(), 2);
@@ -64,6 +65,7 @@ public class WCUtils {
                     // basically transform or not
                     if (weightedChoice(0.7f, 0.3f, 0, 0, 0, 0) == 1) {
                         BlockPos newPos = new BlockPos(newX + j, newY - i, newZ + k);
+                        if (newPos.getY() >= world.getSeaLevel()) continue;
                         aux = SAND_EQUIVALENT.get(world.getBlockState(newPos).getBlock());
                         if (aux != null)// stone -> sandstone // dirt/gravel -> sand
                             world.setBlockState(newPos, aux.getDefaultState(), 2);
