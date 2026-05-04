@@ -1,0 +1,49 @@
+# CREATIVE TAB
+itemGroup.WildCaves4=Дикие пещеры 4
+
+# BLOCKS
+tile.wildcaves4.fossil_1.name=Груда костей
+
+tile.wildcaves4.stalactite_1.name=Сталактит
+tile.wildcaves4.stalactite_2.name=Сталактит
+tile.wildcaves4.stalactite_3.name=Сталактит
+tile.wildcaves4.stalactite_4.name=Сталактит
+tile.wildcaves4.stalactite_connection_1.name=Соединение сталактитов
+tile.wildcaves4.stalactite_connection_2.name=Соединение сталактитов
+tile.wildcaves4.stalactite_connection_3.name=Соединение сталактитов
+tile.wildcaves4.stalactite_connection_4.name=Соединение сталактитов
+tile.wildcaves4.stalactite_end.name=Сталагмит
+tile.wildcaves4.stalagmite_end.name=Сталагмит
+tile.wildcaves4.stalagmite_1.name=Сталагмит
+tile.wildcaves4.stalagmite_2.name=Сталагмит
+tile.wildcaves4.stalagmite_3.name=Сталагмит
+
+tile.wildcaves4.stalactite_sandstone_1.name=Песчаниковый сталактит
+tile.wildcaves4.stalactite_sandstone_2.name=Песчаниковый сталактит
+tile.wildcaves4.stalactite_sandstone_3.name=Песчаниковый сталактит
+tile.wildcaves4.stalactite_sandstone_4.name=Песчаниковый сталактит
+tile.wildcaves4.stalactite_sandstone_connection_1.name=Песчаниковое соединение сталактитов
+tile.wildcaves4.stalactite_sandstone_connection_2.name=Песчаниковое соединение сталактитов
+tile.wildcaves4.stalactite_sandstone_connection_3.name=Песчаниковое соединение сталактитов
+tile.wildcaves4.stalactite_sandstone_connection_4.name=Песчаниковое соединение сталактитов
+tile.wildcaves4.stalactite_sandstone_end.name=Песчаниковый сталагмит
+tile.wildcaves4.stalagmite_sandstone_end.name=Песчаниковый сталагмит
+tile.wildcaves4.stalagmite_sandstone_1.name=Песчаниковый сталагмит
+tile.wildcaves4.stalagmite_sandstone_2.name=Песчаниковый сталагмит
+tile.wildcaves4.stalagmite_sandstone_3.name=Песчаниковый сталагмит
+
+tile.wildcaves4.glowcap_1.name=Светогриб
+tile.wildcaves4.glowcap_2.name=Светогриб
+tile.wildcaves4.glowcap_3.name=Светогриб
+tile.wildcaves4.gloweed_1.name=Светотрава
+tile.wildcaves4.glowcap_4_top.name=Высокий светогриб
+tile.wildcaves4.glowcap_4_bottom.name=Высокий светогриб
+
+tile.wildcaves4.iceshroom_1.name=Ледогриб
+tile.wildcaves4.iceshroom_2.name=Ледогриб
+tile.wildcaves4.iceshroom_3.name=Ледогриб
+tile.wildcaves4.iceshroom_4.name=Ледогриб
+
+tile.wildcaves4.icicle_1.name=Сосулька
+tile.wildcaves4.icicle_2.name=Сосулька
+tile.wildcaves4.icicle_3.name=Сосулька
