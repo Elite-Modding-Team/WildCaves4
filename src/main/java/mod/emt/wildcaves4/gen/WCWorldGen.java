@@ -130,7 +130,7 @@ public class WCWorldGen {
         // --other------
         category = Configuration.CATEGORY_GENERAL;
         timesPerChunk = config.get(category, "Times to attempt generating per chunk", 10).getInt();
-        maxGenHeight = config.get(category, "Max height of structure generation", 80).getInt();
+        maxGenHeight = config.get(category, "Max height of structure generation", 63).getInt();
         maxLength = config.get(category, "Max length of structure generation", 8).getInt();
         if (config.hasChanged()) {
             config.save();
