@@ -74,11 +74,6 @@ public class WCBlockIcicle extends Block {
     }
 
     @Override
-    public int damageDropped(IBlockState state) {
-        return getMetaFromState(state);
-    }
-
-    @Override
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
@@ -102,11 +97,6 @@ public class WCBlockIcicle extends Block {
         if (!this.canBlockStay(world, pos)) {
             world.setBlockToAir(pos);
         }
-    }
-
-    @Override
-    public int quantityDropped(Random rand) {
-        return rand.nextInt(3) - 1;
     }
 
     @Override

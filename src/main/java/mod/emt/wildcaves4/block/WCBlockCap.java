@@ -71,11 +71,6 @@ public class WCBlockCap extends BlockBush implements IShearable {
     }
 
     @Override
-    public int damageDropped(IBlockState meta) {
-        return 0;
-    }
-
-    @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(CreativeTabs par2CreativeTabs, NonNullList<ItemStack> par3List) {
         for (int i = 0; i < getNumOfStructures(); ++i) {
@@ -110,11 +105,6 @@ public class WCBlockCap extends BlockBush implements IShearable {
         ret.add(new ItemStack(this, 1, getMetaFromState(world.getBlockState(pos))));
         ((World) world).setBlockToAir(pos);
         return ret;
-    }
-
-    @Override
-    public int quantityDropped(Random rand) {
-        return rand.nextInt(2);
     }
 
     @Override
