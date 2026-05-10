@@ -47,3 +47,7 @@ tile.wildcaves4.iceshroom_4.name=Iceshrooms
 tile.wildcaves4.icicle_1.name=Icicle
 tile.wildcaves4.icicle_2.name=Icicle
 tile.wildcaves4.icicle_3.name=Icicle
+
+# CONFIG
+config.wildcaves.general=General Settings
+config.wildcaves.worldgen=World Generation

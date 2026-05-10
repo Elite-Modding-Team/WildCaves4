@@ -1,6 +1,6 @@
 package mod.emt.wildcaves4.event;
 
-import mod.emt.wildcaves4.gen.WCWorldGen;
+import mod.emt.wildcaves4.config.WCConfig;
 import mod.emt.wildcaves4.init.WCBlocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -8,7 +8,10 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.event.terraingen.OreGenEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class WCEventOreGen {
     private final WorldGenMinable[] mines = {new WorldGenMinable(WCBlocks.fossil.getDefaultState(), 4), new WorldGenMinable(WCBlocks.fossil.getDefaultState(), 5), new WorldGenMinable(WCBlocks.fossil.getDefaultState(), 6)};
@@ -20,7 +23,8 @@ public class WCEventOreGen {
 
     @SubscribeEvent
     public void generate(OreGenEvent.Post oreGen) {
-        if (!WCWorldGen.DIMENSION_BLACKLIST.contains(oreGen.getWorld().provider.getDimension())) {
+        List<Integer> dimensionBlacklist = Arrays.stream(WCConfig.WORLD_GEN.dimensionBlacklist).boxed().collect(Collectors.toList());
+        if (!dimensionBlacklist.contains(oreGen.getWorld().provider.getDimension())) {
             this.addOreSpawn(oreGen.getRand().nextInt(mines.length), oreGen.getWorld(), oreGen.getRand(), oreGen.getPos());
         }
     }

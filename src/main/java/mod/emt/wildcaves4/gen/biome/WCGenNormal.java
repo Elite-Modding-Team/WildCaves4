@@ -1,6 +1,6 @@
 package mod.emt.wildcaves4.gen.biome;
 
-import mod.emt.wildcaves4.gen.WCWorldGen;
+import mod.emt.wildcaves4.config.WCConfig;
 import mod.emt.wildcaves4.gen.structure.WCDecorationHelper;
 import mod.emt.wildcaves4.gen.structure.WCGenStalactiteStone;
 import mod.emt.wildcaves4.util.WCUtils;
@@ -17,7 +17,7 @@ public class WCGenNormal extends WorldGenerator {
 
     @Override
     public boolean generate(World world, Random random, BlockPos pos) {
-        switch (WCUtils.weightedChoice(WCWorldGen.probabilityVines, WCWorldGen.probabilitySpiderWeb, WCWorldGen.probabilityStalactite, WCWorldGen.probabilityGlowcaps, WCWorldGen.probabilitySkulls, 0)) {
+        switch (WCUtils.weightedChoice(WCConfig.WORLD_GEN.probabilityVines, WCConfig.WORLD_GEN.probabilitySpiderWeb, WCConfig.WORLD_GEN.probabilityStalactite, WCConfig.WORLD_GEN.probabilityGlowcaps, WCConfig.WORLD_GEN.probabilitySkulls, 0)) {
             case 1:
                 WCDecorationHelper.generateVines(world, random, pos);
                 return true;
@@ -25,7 +25,7 @@ public class WCGenNormal extends WorldGenerator {
                 world.setBlockState(pos, Blocks.WEB.getDefaultState(), 2);
                 return true;
             case 3:
-                new WCGenStalactiteStone().generate(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos), WCWorldGen.maxLength);
+                new WCGenStalactiteStone().generate(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos), WCConfig.WORLD_GEN.maxLength);
                 return true;
             case 4:
                 WCDecorationHelper.generateGlowcaps(world, random, pos);

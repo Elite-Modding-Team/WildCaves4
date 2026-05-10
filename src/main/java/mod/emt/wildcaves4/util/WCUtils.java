@@ -93,10 +93,10 @@ public class WCUtils {
     // returns the order number of the probability that was chosen (1-6)
     // all parameters are probabilities
     // probabilities can be 0
-    public static int weightedChoice(float par1, float par2, float par3, float par4, float par5, float par6) {
-        float total = par1 + par2 + par3 + par4 + par5 + par6;
-        float val = WC_RANDOM.nextFloat();
-        float previous;
+    public static int weightedChoice(double par1, double par2, double par3, double par4, double par5, double par6) {
+        double total = par1 + par2 + par3 + par4 + par5 + par6;
+        double val = WC_RANDOM.nextDouble();
+        double previous;
         par1 = par1 / total;
         par2 = par2 / total;
         par3 = par3 / total;

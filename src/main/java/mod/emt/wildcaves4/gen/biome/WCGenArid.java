@@ -1,6 +1,6 @@
 package mod.emt.wildcaves4.gen.biome;
 
-import mod.emt.wildcaves4.gen.WCWorldGen;
+import mod.emt.wildcaves4.config.WCConfig;
 import mod.emt.wildcaves4.gen.structure.WCDecorationHelper;
 import mod.emt.wildcaves4.gen.structure.WCGenStalactiteSandstone;
 import mod.emt.wildcaves4.gen.structure.WCGenStalactiteStone;
@@ -18,9 +18,9 @@ public class WCGenArid extends WorldGenerator {
 
     @Override
     public boolean generate(World world, Random random, BlockPos pos) {
-        switch (WCUtils.weightedChoice(WCWorldGen.probabilitySandStalactites, WCWorldGen.probabilitySpiderWeb, WCWorldGen.probabilityDry, WCWorldGen.probabilitySkulls, WCWorldGen.probabilityStalactite, 0)) {
+        switch (WCUtils.weightedChoice(WCConfig.WORLD_GEN.probabilitySandStalactites, WCConfig.WORLD_GEN.probabilitySpiderWeb, WCConfig.WORLD_GEN.probabilityDry, WCConfig.WORLD_GEN.probabilitySkulls, WCConfig.WORLD_GEN.probabilityStalactite, 0)) {
             case 1:
-                new WCGenStalactiteSandstone().generate(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos), WCWorldGen.maxLength);
+                new WCGenStalactiteSandstone().generate(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos), WCConfig.WORLD_GEN.maxLength);
                 return true;
             case 2:
                 world.setBlockState(pos, Blocks.WEB.getDefaultState(), 2);
@@ -31,7 +31,7 @@ public class WCGenArid extends WorldGenerator {
                 WCDecorationHelper.generateSkulls(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos));
                 return true;
             default:
-                new WCGenStalactiteStone().generate(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos), WCWorldGen.maxLength);
+                new WCGenStalactiteStone().generate(world, random, pos, WCUtils.getNumEmptyBlocks(world, pos), WCConfig.WORLD_GEN.maxLength);
                 return true;
         }
     }
