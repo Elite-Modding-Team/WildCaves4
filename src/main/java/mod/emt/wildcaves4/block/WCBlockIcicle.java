@@ -89,7 +89,7 @@ public class WCBlockIcicle extends Block {
 
     @Override
     public Item getItemDropped(IBlockState metadata, Random random, int par3) {
-        return Item.getItemFromBlock(Blocks.ICE);
+        return Item.getItemFromBlock(Blocks.PACKED_ICE);
     }
 
     @Override
