@@ -54,7 +54,22 @@ public class WCConfig {
         @Config.Name("Block Whitelist")
         @Config.Comment("Blocks that stalactites/stalagmites and other structures can hang from or generate on")
         @Config.RequiresMcRestart
-        public String[] blockWhitelist = {"stone", "grass", "dirt", "cobblestone", "gravel", "gold_ore", "iron_ore", "coal_ore", "lapis_ore", "sandstone", "diamond_ore", "redstone_ore", "lit_redstone_ore", "ice", "snow", "clay", "monster_egg", "emerald_ore"};
+        public String[] blockWhitelist = {
+                "stone",
+                "cobblestone",
+                "sandstone",
+                "coal_ore",
+                "iron_ore",
+                "gold_ore",
+                "diamond_ore",
+                "lapis_ore",
+                "redstone_ore",
+                "lit_redstone_ore",
+                "emerald_ore",
+                "ice",
+                "snow",
+                "monster_egg"
+        };
 
         @Config.Name("Frozen Cave Block")
         @Config.Comment("The block to generate in frozen caves")
