@@ -12,6 +12,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
+@SuppressWarnings("deprecation")
 public class WCDecorationHelper {
 
     //flood some cave with water around the specified x,y,z
